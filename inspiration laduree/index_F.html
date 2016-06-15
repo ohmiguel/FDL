@@ -1,0 +1,482 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+<title>Un héritage gastronomique royal  - Dalloyau</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<![endif]-->
+<meta name="description" content="DALLOYAU, inventeur du bon goût depuis 1682.
+Boutique en ligne de macarons, pâtisseries, chocolats et coffrets gourmands.
+" />
+<meta name="keywords" content="Inventeur du bon goût depuis 1682, création, macarons, chocolats, savoir-faire" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://www.dalloyau.fr/skin/frontend/dalloyau/default/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.dalloyau.fr/skin/frontend/dalloyau/default/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans|Tangerine|OFL+Sorts+Mill+Goudy+TT" type="text/css" />
+<!--
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans&subset=latin" type="text/css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT&subset=latin" type="text/css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Tangerine&subset=latin" type="text/css" />
+-->
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://www.dalloyau.fr/js/blank.html';
+    var BLANK_IMG = 'http://www.dalloyau.fr/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://www.dalloyau.fr/js/calendar/calendar-win2k-1.css" />
+<link rel="stylesheet" type="text/css" href="http://www.dalloyau.fr/skin/frontend/dalloyau/default/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.dalloyau.fr/skin/frontend/dalloyau/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.dalloyau.fr/skin/frontend/dalloyau/default/css/calendar.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.dalloyau.fr/skin/frontend/dalloyau/default/css/font-awesome.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.dalloyau.fr/skin/frontend/base/default/css/me/cmb/cmb.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.dalloyau.fr/skin/frontend/dalloyau/default/css/print.css" media="print" />
+<script type="text/javascript" src="http://www.dalloyau.fr/media/js/d418a425fbc66133f05523e3b5e51dbb.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://www.dalloyau.fr/skin/frontend/dalloyau/default/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://www.dalloyau.fr/media/js/8fb47f8e0e264aa18c1df1045f09e989.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = [];
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+enUS = {"m":{"wide":["January","February","March","April","May","June","July","August","September","October","November","December"],"abbr":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]}}; // en_US locale reference
+Calendar._DN = ["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"]; // full day names
+Calendar._SDN = ["dim.","lun.","mar.","mer.","jeu.","ven.","sam."]; // short day names
+Calendar._FD = 1; // First day of the week. "0" means display Sunday first, "1" means display Monday first, etc.
+Calendar._MN = ["janvier","f\u00e9vrier","mars","avril","mai","juin","juillet","ao\u00fbt","septembre","octobre","novembre","d\u00e9cembre"]; // full month names
+Calendar._SMN = ["janv.","f\u00e9vr.","mars","avr.","mai","juin","juil.","ao\u00fbt","sept.","oct.","nov.","d\u00e9c."]; // short month names
+Calendar._am = "AM"; // am/pm
+Calendar._pm = "PM";
+
+// tooltips
+Calendar._TT = {};
+Calendar._TT["INFO"] = "À propos du calendrier";
+
+Calendar._TT["ABOUT"] =
+"Sélecteur de date/heure DHTML\n" +
+"(c) dynarch.com 2002-2005 / Author: Mihai Bazon\n" +
+"Pour la visite de la dernière version : http://www.dynarch.com/projects/calendar/\n" +
+"Distribué sous licence GNU LGPL. Voir http://gnu.org/licenses/lgpl.html pour plus de détails." +
+"\n\n" +
+"Sélection de date :\n" +
+"- Utilisez les boutons \xab, \xbb pour sélectionner l\'année\n" +
+"- Utilisez les boutons " + String.fromCharCode(0x2039) + ", " + String.fromCharCode(0x203a) + " pour sélectionner le mois\n" +
+"- Maintenez le bouton de la souris sur n\'importe quel bouton ci-dessus pour une sélection rapide";
+Calendar._TT["ABOUT_TIME"] = "\n\n" +
+"Sélection de l\'heure :\n" +
+"- Cliquez sur n\'importe quelle partie de l\'heure pour l\'augmenter\n" +
+"- ou cliquez en maintenant la touche shift enfoncée pour l\'augmenter\n" +
+"- ou cliquez et glissez pour une sélection plus rapide";
+
+Calendar._TT["PREV_YEAR"] = "Année précédente (maintenez pour le menu)";
+Calendar._TT["PREV_MONTH"] = "Mois précédent (maintenez pour le menu)";
+Calendar._TT["GO_TODAY"] = "Aller à aujourd\'hui";
+Calendar._TT["NEXT_MONTH"] = "Mois suivant (maintenez pour le menu)";
+Calendar._TT["NEXT_YEAR"] = "Année prochaine (maintenez pour le menu)";
+Calendar._TT["SEL_DATE"] = "Sélectionner la date";
+Calendar._TT["DRAG_TO_MOVE"] = "Glisser pour déplacer";
+Calendar._TT["PART_TODAY"] = ' (' + "aujourd\u2019hui" + ')';
+
+// the following is to inform that "%s" is to be the first day of week
+Calendar._TT["DAY_FIRST"] = "Afficher d\'abord %s";
+
+// This may be locale-dependent. It specifies the week-end days, as an array
+// of comma-separated numbers. The numbers are from 0 to 6: 0 means Sunday, 1
+// means Monday, etc.
+Calendar._TT["WEEKEND"] = "0,6";
+
+Calendar._TT["CLOSE"] = "Fermer";
+Calendar._TT["TODAY"] = "aujourd\u2019hui";
+Calendar._TT["TIME_PART"] = "Pour modifier la valeur, cliquez en maintenant la touche shift enfoncée ou glissez";
+
+// date formats
+Calendar._TT["DEF_DATE_FORMAT"] = "%e %b %Y";
+Calendar._TT["TT_DATE_FORMAT"] = "%e %B %Y";
+
+Calendar._TT["WK"] = "semaine";
+Calendar._TT["TIME"] = "Heure :";
+//]]>
+</script>
+<script type="text/javascript">var Translator = new Translate({"Please select an option.":"S\u00e9lectionnez une option","This is a required field.":"Ce champ est obligatoire.","Please enter a valid number in this field.":"Veuillez saisir un nombre valide.","Please use numbers only in this field. please avoid spaces or other characters such as dots or commas.":"Seuls les chiffres sont autoris\u00e9s dans ce champ. \u00c9vitez les espaces ou autres caract\u00e8res tels que les points ou les virgules.","Please use letters only (a-z) in this field.":"Veuillez utiliser uniquement des lettres (a-z) dans ce champ.","Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"Veuillez utiliser uniquement des lettres (a-z), des chiffres (0-9) ou underscore (_) dans ce champ, en commen\u00e7ant par une lettre.","Please use only letters (a-z) or numbers (0-9) only in this field. No spaces or other characters are allowed.":"Veuillez utiliser uniquement des lettres (a-z) ou des chiffres (0-9) dans ce champ. Les espaces et autres caract\u00e8res ne sont pas autoris\u00e9s.","Please use only letters (a-z) or numbers (0-9) or spaces and # only in this field.":"Veuillez utiliser uniquement des lettres (a-z), des chiffres (0-9), des espaces ou des di\u00e8ses (#) dans ce champ.","Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.":"Veuillez saisir un num\u00e9ro de t\u00e9l\u00e9phone valide.","Please enter a valid date.":"Veuillez saisir une date valide.","Please enter a valid email address. For example johndoe@domain.com.":"Veuillez saisir une adresse email valide.","Please enter 6 or more characters.":"Veuillez saisir au moins 6 caract\u00e8res.","Please make sure your passwords match.":"V\u00e9rifiez que vos mots de passe concordent.","Please enter a valid URL. http:\/\/ is required":"Veuillez saisir une URL valide. Elle doit commencer par http:\/\/","Please enter a valid URL. For example http:\/\/www.example.com or www.example.com":"Veuillez saisir une URL valide. Par exemple http:\/\/www.exemple.com ou www.exemple.com","Please enter a valid social security number. For example 123-45-6789.":"Veuillez saisir un num\u00e9ro de s\u00e9curit\u00e9 sociale valide. Par exemple 123-45-6789.","Please enter a valid zip code. For example 90602 or 90602-1234.":"Veuillez saisir un code postal valide. Par exemple 92100.","Please enter a valid zip code.":"Veuillez saisir un code postal valide.","Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.":"Veuillez utiliser ce format de date : jj\/mm\/aaaa. Par exemple, 21\/12\/2012 pour le 21 D\u00e9cembre 2012.","Please enter a valid $ amount. For example $100.00.":"Veuillez saisir un montant valide. Par exemple 100.00 \u20ac.","Please select one of the above options.":"Veuillez choisir une des options ci-dessus.","Please select one of the options.":"Veuillez choisir une des options.","Please select State\/Province.":"Veuillez choisir un \u00e9tat\/province.","Please enter valid password.":"Veuillez saisir un mot de passe valide.","Please enter 6 or more characters. Leading or trailing spaces will be ignored.":"Veuillez saisir au moins 6 caract\u00e8res. Les espaces en d\u00e9but ou en fin de cha\u00eene seront ignor\u00e9s.","Please use letters only (a-z or A-Z) in this field.":"Veuillez utiliser uniquement des lettres (a-z ou A-Z) dans ce champ.","Please enter a number greater than 0 in this field.":"Veuillez saisir un nombre sup\u00e9rieur \u00e0 0 dans ce champ.","Please enter a valid credit card number.":"Veuillez saisir un num\u00e9ro de carte bancaire valide.","Please wait, loading...":"Veuillez patienter, chargement en cours...","Please choose to register or to checkout as a guest":"Choisissez de vous enregistrer ou de passer votre commande en tant qu'invit\u00e9","Error: Passwords do not match":"Erreur : les mots de passe sont diff\u00e9rents","Your order cannot be completed at this time as there is no shipping methods available for it. Please make necessary changes in your shipping address.":"Vous ne pouvez pas continuer votre commande car aucun mode de livraison n'est disponible pour votre panier.","Please specify shipping method.":"Choisissez un mode de livraison.","Your order cannot be completed at this time as there is no payment methods available for it.":"Vous ne pouvez pas continuer votre commande car aucun mode de paiement n'est disponible.","Please specify payment method.":"Choisissez un mode de paiement.","Credit card number doesn't match credit card type":"Le num\u00e9ro de carte ne correspond pas au type de carte.","Card type does not match credit card number":"Le type de carte ne correspond pas au num\u00e9ro de carte.","Please enter a valid credit card verification number.":"Veuillez saisir un num\u00e9ro de v\u00e9rification de carte bancaire valide.","Please use only letters (a-z or A-Z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"Utilisez uniquement des lettres (a-z ou A-Z), des chiffres (0-9) ou des underscores (_) dans ce champ. Le premier caract\u00e8re doit \u00eatre une lettre.","Please input a valid CSS-length. For example 100px or 77pt or 20em or .5ex or 50%":"Veuillez saisir une dimension CSS valide. Par exemple 100px ou 77pt ou 20em ou .5ex ou 50%","Maximum length exceeded.":"D\u00e9passement de la longueur maximum","Your session has been expired, you will be relogged in now.":"Votre session a expir\u00e9, veuillez vous connecter \u00e0 nouveau.","Incorrect credit card expiration date":"Date d'expiration de carte incorrecte","This date is a required value.":"Cette date est obligatoire."});</script><meta name="google-site-verification" content="J_X-C4HIm-gdeBkeybHjHHXSKkUdiEY-B4jxHIO9E6U" /><!--[if IE 6]>
+	<script type="text/javascript">Cufon.replace('#nav li a.level-top', {hover:'true',separate:'none'});</script>
+<![endif]-->
+<script type="text/javascript">
+	var $j =jQuery.noConflict();
+	//if (navigator.appVersion.indexOf("Win")!=-1 && (navigator.userAgent.indexOf("Firefox")!=-1 || navigator.userAgent.indexOf("Chrome")!=-1))
+	Cufon.replace('#nav li a.level-top', {hover:'true',separate:'none',fontFamily:'DINPro-Light'});
+</script>
+  <script>
+        jQuery(document).ready(function(){ 
+          jQuery('#cookie_banner_close').click(function(){
+                        jQuery('.cookie_banner').hide();
+                });
+        });
+    </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-19969212-1', 'auto');
+  ga('send', 'pageview');
+
+</script></head>
+<body class=" cms-index-index cms-home">
+
+<!-- BEGIN GOOGLE ANALYTICS CODE -->
+<script type="text/javascript">
+//<![CDATA[
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+    })();
+
+    var _gaq = _gaq || [];
+    _gaq.push(["_setAccount", "UA-19969212-1"]);
+    _gaq.push(["_trackPageview", "/"]);
+//]]>
+</script>
+<!-- END GOOGLE ANALYTICS CODE -->
+        <div class="wrapper">
+        <noscript>
+        <div class="noscript">
+            <div class="noscript-inner">
+                <p><strong>Apparemment, javascript est désactivé sur votre navigateur.</strong></p>
+                <p>Javascript doit être activé dans votre navigateur pour utiliser toutes les fonctionnalités de ce site.</p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        <!-- Code Google de la balise de remarketing -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1063270141;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<div style="display: none">
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+</div>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1063270141/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<div class="card-tooltip" id="tooltip1" style="display:none;">
+	<p>Retrait <b>gratuit</b> dans l'une de nos boutiques à Paris, entre 11h et 19h30 le lendemain ou surlendemain de votre commande selon les produits.</p>
+</div>
+<div class="card-tooltip" id="tooltip2" style="display:none;">
+	<p>Expédition en France métropolitaine (Corse non compris), par Chronopost en 24h (hors jours fériés).<br/> 
+	A partir de 10.80€ TTC, selon le poids du colis.<br/>
+	Expédition le lendemain ou le surlendemain selon l’heure de votre commande.</p>
+</div>
+<div class="card-tooltip" id="tooltip3" style="display:none;">
+	<p>Livraison à Paris et en Région Parisienne, du lundi au vendredi, entre 9h et 18h le lendemain ou le surlendemain de votre commande selon les produits.<br/> 
+	A partir de 25.00€ HT - 29.90€ TTC, gratuite pour une commande supérieure à 11 Plateaux Repas et livrée à Paris.<br/> 
+	Vous pouvez également faire livrer avec votre commande de Plateau Repas : Cocktails, Pâtisserie, Macarons, Confiserie & Chocolats, Epicerie & Coffrets Cadeaux.
+	</p>
+</div>
+
+<div id="blackbox" style="display:none;"></div>
+<div id="lightbox" style="display:none;">
+	<img id="calque-close" onClick="close_calque();" src="http://www.dalloyau.fr/skin/frontend/dalloyau/default/images/close.gif" /><br>
+	<div id="lightbox-container"><img src="http://www.dalloyau.fr/skin/frontend/dalloyau/default/images/dalloyau-carte.jpg" usemap="#cartemap" /></div>
+</div>
+
+<div class="header-container">
+    <div class="header">
+		<div class="quick-access-left">
+			<p class="language">
+				FR<span style="vertical-align:bottom;margin-left:2px;margin-right:2px;">|</span><a href="http://www.dalloyau.com">EN</a><span style="vertical-align:bottom;margin-left:2px;margin-right:2px;color:#C1BFBF">|</span><a href="http://www.dalloyau.co.jp" target="_blank" >JP</a><!--<span style="vertical-align:bottom;margin-left:2px;margin-right:2px;color:#C1BFBF">|</span><a href="http://www.dalloyau.az" target="_blank" >AZ</a>-->
+			</p>
+			<div class="social">
+									<a href="http://www.facebook.com/pages/DALLOYAU/71442849110" title="Facebook" target="_blank"><img src="http://www.dalloyau.fr/skin/frontend/dalloyau/default/images/facebook.png" alt="Partager sur Facebook" /></a></span>
+					<a style="margin-left: 2px" href="http://www.pinterest.com/dalloyau" title="Pinterest" target="_blank"><img src="http://www.dalloyau.fr/skin/frontend/dalloyau/default/images/pinterest.png"></a>
+					<a style="margin-left: 2px" href="http://twitter.com/MaisonDalloyau" title="Twitter" target="_blank"><img src="http://www.dalloyau.fr/skin/frontend/dalloyau/default/images/twitter.png"></a>
+								<a style="margin-left: 2px" href="http://instagram.com/dalloyauparis" title="Instagram" target="_blank"><img src="http://www.dalloyau.fr/skin/frontend/dalloyau/default/images/instagram.png"></a>
+			</div>
+			<form id="search_mini_form" action="http://www.dalloyau.fr/catalogsearch/result/" method="get">
+    <div class="form-search">
+        <!--<label for="search">Rechercher :</label>-->
+        <input id="search" type="text" name="q" value="" class="input-text" />
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Rechercher');
+            searchForm.initAutocomplete('http://www.dalloyau.fr/catalogsearch/ajax/suggest/', 'search_autocomplete');
+        //]]>
+        </script>
+    </div>
+</form>
+		</div>
+                <h1><strong>Dalloyau</strong><a href="http://www.dalloyau.fr/" title="Dalloyau"><img src="http://www.dalloyau.fr/skin/frontend/dalloyau/default/images/logo-OR-luxor.png" alt="Dalloyau" class="logo" /></a></h1>
+                <div class="quick-access-right">
+			<!--<p class="welcome-msg">Bienvenue sur la <a href="http://www.dalloyau.fr/" style="background: none repeat scroll 0% 0% transparent; padding: 0;" title="Bienvenue sur la boutique Dalloyau">boutique Dalloyau</a></p>-->
+			<div class="login">
+				            	            	<a href="http://www.dalloyau.fr/customer/account/">S'identifier&nbsp;&nbsp;&nbsp;<img src="http://www.dalloyau.fr/skin/frontend/dalloyau/default/images/picto_compte.png" width="17px" height="17px" style="margin-right: 2px;" /></a>
+            	            </div>
+			<div class="cart">
+				<div>
+					<a href="http://www.dalloyau.fr/checkout/cart/">Mon panier</a><br>
+					0 article				</div>
+				<a href="http://www.dalloyau.fr/checkout/cart/"><img src="http://www.dalloyau.fr/skin/frontend/dalloyau/default/images/PICTOGRAMME-PANIER.jpg" width="22px" height="26px"/></a>
+			</div>
+			
+                                </div>
+            </div>
+</div>
+<div class="nav-container">
+    <ul id="nav">
+    	<li class="level0 level-top nav-0" id="">
+			<a href="http://www.dalloyau.fr/salons-de-the/adresses-salon-de-the/" class="level-top"><span><span class="big">Salons<br>de Th&eacute;</span></span></a>
+		</li>
+        <li class="level0 nav-1 level-top first parent">
+<a href="http://www.dalloyau.fr/le-traiteur.html" class="level-top">
+<span>Le <br/><span class="big">Traiteur</span></span>
+</a>
+<ul class="level0">
+<li class="level1 nav-1-1 first">
+<a href="http://www.dalloyau.fr/le-traiteur/plateaux-cocktail-sales.html">
+<span>Les Cocktails Salés</span>
+</a>
+</li><li class="level1 nav-1-2">
+<a href="http://www.dalloyau.fr/le-traiteur/les-entrees.html">
+<span>Les Entrées</span>
+</a>
+</li><li class="level1 nav-1-3">
+<a href="http://www.dalloyau.fr/le-traiteur/les-plats.html">
+<span>Les Poissons</span>
+</a>
+</li><li class="level1 nav-1-4">
+<a href="http://www.dalloyau.fr/le-traiteur/les-viandes.html">
+<span>Les Viandes</span>
+</a>
+</li><li class="level1 nav-1-5 last">
+<a href="http://www.dalloyau.fr/le-traiteur/les-legumes-pains-fromages.html">
+<span>Légumes, Pains et Fromages</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-2 level-top parent">
+<a href="http://www.dalloyau.fr/la-patisserie-1.html" class="level-top">
+<span>Les <br/><span class="big">Pâtisseries</span></span>
+</a>
+<ul class="level0">
+<li class="level1 nav-2-1 first">
+<a href="http://www.dalloyau.fr/la-patisserie-1/plateaux-cocktail-sucres.html">
+<span>Les Cocktails Sucrés</span>
+</a>
+</li><li class="level1 nav-2-2">
+<a href="http://www.dalloyau.fr/la-patisserie-1/les-patisseries.html">
+<span>Les Pâtisseries </span>
+</a>
+</li><li class="level1 nav-2-3">
+<a href="http://www.dalloyau.fr/la-patisserie-1/les-petits-gateaux.html">
+<span>Les Petits Gâteaux</span>
+</a>
+</li><li class="level1 nav-2-4">
+<a href="http://www.dalloyau.fr/la-patisserie-1/les-gouters.html">
+<span>Les Goûters</span>
+</a>
+</li><li class="level1 nav-2-5 last">
+<a href="http://www.dalloyau.fr/la-patisserie-1/les-jours-de-fete.html">
+<span>Les Jours de Fête</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-3 level-top parent">
+<a href="http://www.dalloyau.fr/macarons.html" class="level-top">
+<span>Les Macarons<br/><span class="big">&amp; Chocolats</span></span>
+</a>
+<ul class="level0">
+<li class="level1 nav-3-1 first">
+<a href="http://www.dalloyau.fr/macarons/macarons.html">
+<span>Les Macarons</span>
+</a>
+</li><li class="level1 nav-3-2">
+<a href="http://www.dalloyau.fr/macarons/les-ecrins-de-chocolats.html">
+<span>Les Bonbons de Chocolats</span>
+</a>
+</li><li class="level1 nav-3-3">
+<a href="http://www.dalloyau.fr/macarons/gourmandises-confiserie.html">
+<span>Les Tablettes de chocolat &amp; la Confiserie</span>
+</a>
+</li><li class="level1 nav-3-4 last">
+<a href="http://www.dalloyau.fr/macarons/coffrets-cadeaux-1.html">
+<span>L'Epicerie &amp; les Coffrets Cadeaux</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-4 level-top parent">
+<a href="http://www.dalloyau.fr/confiserie-chocolats.html" class="level-top">
+<span>A Expédier<br/><span class="big">en France</span></span>
+</a>
+<ul class="level0">
+<li class="level1 nav-4-1 first">
+<a href="http://www.dalloyau.fr/confiserie-chocolats/les-gourmandises.html">
+<span>Les Gourmandises et la Confiserie</span>
+</a>
+</li><li class="level1 nav-4-2">
+<a href="http://www.dalloyau.fr/confiserie-chocolats/epicerie.html">
+<span>L'Epicerie &amp; les Coffrets Cadeaux</span>
+</a>
+</li><li class="level1 nav-4-3 last">
+<a href="http://www.dalloyau.fr/confiserie-chocolats/les-chocolats-1.html">
+<span>Les écrins de chocolat </span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-5 level-top last parent">
+<a href="http://www.dalloyau.fr/les-plateaux-repas.html" class="level-top">
+<span>Les Plateaux<br/><span class="big">Repas</span></span>
+</a>
+<ul class="level0">
+<li class="level1 nav-5-1 first">
+<a href="http://www.dalloyau.fr/les-plateaux-repas/les-plateaux-repas-1.html">
+<span>Les Plateaux-Repas</span>
+</a>
+</li><li class="level1 nav-5-2">
+<a href="http://www.dalloyau.fr/les-plateaux-repas/les-eat-box.html">
+<span>Les Eat-Box</span>
+</a>
+</li><li class="level1 nav-5-3">
+<a href="http://www.dalloyau.fr/les-plateaux-repas/les-sandwiches.html">
+<span>Les Pauses Sandwiches</span>
+</a>
+</li><li class="level1 nav-5-4 last">
+<a href="http://www.dalloyau.fr/les-plateaux-repas/boissons.html">
+<span>Les Boissons</span>
+</a>
+</li>
+</ul>
+</li>
+        <li class="level0 nav-corporate level-top last-child">
+			<a class="level-top" href="http://www.dalloyau.fr/maison-dalloyau/"><span>La Maison<br><span class="big">Dalloyau</span></span></a>
+			<ul>
+<li><a href="http://www.dalloyau.fr/maison-dalloyau/savoir-faire"><span>Une Maison de savoir-faire</span></a></li>
+<li><a href="http://www.dalloyau.fr/maison-dalloyau"><span>Une Maison historique</span></a></li>
+<li><a href="http://www.dalloyau.fr/maison-dalloyau/inimythables"><span>Des produits Inimythables®</span></a></li>
+<!--
+<li><a href="http://www.dalloyau.fr/maison-dalloyau/actualites" _mce_href="http://www.dalloyau.fr/maison-dalloyau/actualites"><span>Les Actualit&eacute;s</span></a></li>
+<li><a href="http://www.dalloyau.fr/nos-boutiques" _mce_href="http://www.dalloyau.fr/nos-boutiques"><span>Les Boutiques</span></a></li>
+<li><a href="http://www.dalloyau.fr/maison-dalloyau/salons-de-the" _mce_href="http://www.dalloyau.fr/maison-dalloyau/salons-de-the"><span>Les Salons de Th&eacute;</span></a></li>
+<li><a href="http://www.dalloyau.fr/maison-dalloyau/receptions" _mce_href="http://www.dalloyau.fr/maison-dalloyau/receptions"><span>Les R&eacute;ceptions</span></a></li>
+<li><a href="http://www.dalloyau.fr/maison-dalloyau/plateaux-repas" _mce_href="http://www.dalloyau.fr/maison-dalloyau/plateaux-repas"><span>Les Plateaux Repas</span></a></li>
+<li><a href="http://www.dalloyau.fr/cartes" _mce_href="http://www.dalloyau.fr/cartes"><span>Les Cartes</span></a></li>
+--> 
+</ul>		</li>
+		
+        <li class="level0 nav-corporate level-top last-child">
+			<a class="level-top" target="_blank" href="http://www.dalloyaureceptions.fr"><span><span class="big">Dalloyau<br>R&eacute;ceptions</span></span></a>
+		</li>
+    </ul>
+</div>
+        <div class="main-container-home col1-layout">
+        	<div class="main-home">
+                <div class="col-main">
+                                        <div class="std"><p>
+<div style="float: left; width: 701px; margin: 0 14px 0 5px;"><p><a title="plateaux-repas" href="http://www.dalloyau.fr/les-plateaux-repas.html" target="_self"><img title="plateaux-repas Dalloyau" src="http://www.dalloyau.fr/media//EMS-MAJEUR-PLTX-REPAS_1.jpg" alt="Plateaux repas" /></a></p></div>
+<div style="float: right; width: 217px;"><p><a title="Macarons" href="http://www.dalloyau.fr/macarons/macarons.html" target="_self"><img title="Coffret Macarons" src="http://www.dalloyau.fr/media//EMS-MINEUR-MACARONS-SEPT-15.jpg" alt="Coffret Macarons" /></a></p><p><a title="Chocolats Dalloyau" href="http://www.dalloyau.fr/confiserie-chocolats/les-chocolats-1.html" target="_self"><img style="margin-top: 7px;"title="Bo&icirc;te de chocolats" src="http://www.dalloyau.fr/media//EMS-MINEUR-CHOCOLATS-SEPT-1.jpg" alt="Chocolats Dalloyau" /></a></p></div></p></div>                </div>
+            </div>
+        </div>
+        <div class="footer-container">
+	<div class='liseret'></div>
+    <div class="footer">
+        <ul style="margin-top: 5px;">
+<li><a href="http://www.dalloyau.fr/actualites"><span>Actualit&eacute;s</span></a></li>
+<li><a href="http://www.dalloyau.fr/nos-boutiques">Boutiques</a></li>
+<li><a href="http://www.dalloyau.fr/cartes">Cartes</a></li>
+<li><a href="http://www.dalloyau.fr/contacts">Contact</a></li>
+<li><a href="http://www.dalloyau.fr/presse">Presse</a></li>
+<li><a href="http://www.dalloyau.fr/recrutement">Recrutement</a></li>
+<li><a href="http://www.dalloyau.fr/maison-dalloyau/charte-dalloyau"><span>Charte engagement</span></a></li>
+<li><a href="http://www.dalloyau.fr/cgv">CGV</a></li>
+<li><a href="http://www.dalloyau.fr/faq">FAQ</a></li>
+</ul>    </div>
+</div>
+<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+            <div id="me-cmb" class="block block-subscribe me-cmb cacher">
+		<div class="block-onglet"></div>
+        <div class="block-title">
+                    </div>
+                    <div id="me-cmb-subtitle" class="block-subtitle">
+                <span>Laissez vos coordonnées, notre Service Clients vous recontacte très vite !
+<br><br>
+Du lundi au vendredi de 8h à 19h.
+</span>
+            </div>
+                <form action="#" id="cmb-validate-detail">
+            <div id="me-cmb-content" class="block-content">
+                <p id="me-cmb-response" class="success-msg" style="display: none;"></p>
+                <input type="hidden" name="form_key" value="2uAUcLf1YN4lg97V"/>
+                <ul class="form-list">
+                    <li class="fields">
+                        <label for="cmb_full_name" class="required">Nom, Prénom:</label>
+                        <div class="input-box">
+                            <input type="text" name="cmb_full_name" id="cmb_full_name" title="Nom, Prénom" class="input-text required-entry" value="" />
+                        </div>
+                    </li>
+                    <li class="fields">
+                        <label for="cmb_telephone" class="required">Téléphone:</label>
+                        <div class="input-box">
+                            <input type="text" name="cmb_telephone" id="cmb_telephone" title="Téléphone" class="input-text required-entry"/>
+                        </div>
+                    </li>
+                                                        </ul>
+                <div class="actions">
+                    <button type="submit" title="VALIDER" class="button"></button>
+                </div>
+            </div>
+        </form>
+        <script type="text/javascript">
+        jQuery(document).ready(function(){
+
+
+            jQuery('.block-onglet').click(function() {
+                if(jQuery('#me-cmb').is(".afficher")){
+                    jQuery('#me-cmb').removeClass("afficher");
+                    jQuery('#me-cmb').addClass("cacher");
+                    jQuery('#me-cmb').animate({right: '-=285px'},200);
+                
+                }else{
+                    jQuery('#me-cmb').removeClass("cacher");
+                    jQuery('#me-cmb').addClass("afficher");
+                    jQuery('#me-cmb').animate({right: '+=285px'},200);
+                }   
+            });
+
+            //jQuery('.block-onglet').off('click');
+        });
+            //<![CDATA[
+            var cmbFormDetail = new VarienForm('cmb-validate-detail');
+            var options = {
+                blockId: 'me-cmb',
+                blockSubtitleId: 'me-cmb-subtitle',
+                blockResponseId: 'me-cmb-response',
+                ajaxUrl: 'http://www.dalloyau.fr/cmb/ajax/update/',
+                delayTime: 10            };
+            var CmbRequest = new CmbRequest('cmb-validate-detail', cmbFormDetail, options);
+
+                        //]]>
+        </script>
+    </div>
+    </div>
+</div>
+</body>
+</html>
